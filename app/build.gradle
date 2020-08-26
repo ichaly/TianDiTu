@@ -29,6 +29,8 @@ android {
             dirs 'libs' //this way we can find the .aar file in libs folder
         }
     }
+
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -38,7 +40,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
     // 天地图SDK Tiandituapi3.0.2(20190103-02)
     implementation files('libs/tiandituapi3.0.2.jar')
 }
